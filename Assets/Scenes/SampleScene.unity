@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1729809304}
+  switcher: {fileID: 282840815}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +496,7 @@ MonoBehaviour:
   blueBall: {fileID: 163435112}
   spawner: {fileID: 31900891}
   increase: 0
+  gameOver: 0
 --- !u!1 &366416740
 GameObject:
   m_ObjectHideFlags: 0
@@ -5463,6 +5465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1729809304}
+  switcher: {fileID: 282840815}
 --- !u!1 &1719736325
 GameObject:
   m_ObjectHideFlags: 0

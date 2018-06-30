@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour {
     public GameObject canvas;
+    public switch_buttons switcher;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +16,7 @@ public class Collision : MonoBehaviour {
         if(other.tag != gameObject.tag)
         {
             canvas.SetActive(true);
-            Time.timeScale = 0;
+            switcher.gameOver = true;
         }
 
         

@@ -9,6 +9,7 @@ public class switch_buttons : MonoBehaviour {
     public float increase;
     private float period = 1;
     private float nextActionTime;
+    public bool gameOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,7 @@ public class switch_buttons : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time > nextActionTime)
+        if ((Time.time > nextActionTime)&&(gameOver== false))
         {
             nextActionTime += period;
    
@@ -50,4 +51,5 @@ public class switch_buttons : MonoBehaviour {
             clone.SetActive(true);
         }
     }
+    
 }

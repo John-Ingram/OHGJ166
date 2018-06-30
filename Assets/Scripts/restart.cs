@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class restart : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+public class reload : MonoBehaviour
+{
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("SampleScene");
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
     }
-}
+} 
+
