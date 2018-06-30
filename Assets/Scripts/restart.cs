@@ -14,7 +14,7 @@ public class restart : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Sample Scene");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
